@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*---------------------------------------
+
+Hemispheric Institute HIDVL stylesheet October 2007
+(for version 2006 browsers)
+
+version: 1.0
+author: Dexter Miranda
+email: hello@dxtr.org
+website: http://www.dxtr.org/
+
+----------------------------------------*/
+
+
+
+/* BEGIN GLOBAL NAVIGATION
+----------------------------------------*/
+	
+	.hidvlStyle #globalnav {
+	float: left;
+	width: 820px;
+	clear: none;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	padding: 0px;
+	display: none;
+	}
+.hidvlStyle #header #masthead img {
+	margin-left: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	padding-top: 60px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+	
+	.hidvlStyle #header #globalnav #hemilogo {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: left;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #header #globalnav #language {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #header #globalnav #languageselected {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	float: right;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #666;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #000;
+	letter-spacing: 1px;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #111111;
+	border-bottom-color: #111111;
+	border-left-color: #111111;
+	}
+	
+	.hidvlStyle #header #globalnav a {
+	text-transform: uppercase;
+	color: #666666;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	}
+	
+	.hidvlStyle #header #globalnav a:hover {
+	color:#333333;
+	background-color: #CCCCCC;
+	text-decoration: none;
+	}
+	
+/* END GLOBAL NAVIGATION */
+	
+	
+	
+	
+/* BEGIN GLOBAL SEARCH HOMEPAGE
+----------------------------------------*/
+	
+	.hidvlStyle #globalhomesearch {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	float: left;
+	width: 880px;
+	vertical-align: bottom;
+	background-image: url(images/jesusa.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	margin: 0px;
+	height: 413px;
+	}
+	
+	.hidvlStyle #globalhomesearch #hidvlhomenav {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: left;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #globalhomesearch #search {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	float: right;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 12px;
+	width: 150px;
+	background-color: efefef;
+	padding: 2px;
+	height: 20px;
+	border: 1px solid #999999;
+	margin: 2px;
+	vertical-align: middle;
+	}
+	
+	.hidvlStyle #globalhomesearch #hidvlnavselected {
+	text-transform: uppercase;
+	color: #666666;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	width: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	float: left;
+	background-color: #FFFFFF;
+	}
+	
+	.hidvlStyle #globalhomesearch #hidvlhomenav a {
+	text-transform: uppercase;
+	color: #CCCCCC;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #333333;
+	border-left-color: #333333;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+	width: auto;
+	background-color: #333333;
+	}
+	
+	.hidvlStyle #globalhomesearch #hidvlnav a:hover {
+	color:#333333;
+	background-color: #CCCCCC;
+	text-decoration: none;
+	}
+	
+	.hidvlStyle #globalhomesearch #browse {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #globalhomesearch #browse a {
+	text-transform: uppercase;
+	color: white;
+	font-weight:bold;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #333333;
+	border-left-color: #333333;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+	width: auto;
+	background-color: #333333;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* BEGIN GLOBAL SEARCH
+----------------------------------------*/
+	
+	.hidvlStyle #globalsearch {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	float: left;
+	width: 820px;
+	clear: right;
+	clip: rect(auto,10px,auto,auto);
+	}
+	
+	
+	
+	
+	.hidvlStyle #globalsearch #browse {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #globalsearch #browse a:hover {
+        text-decoration: underline;
+	}
+	.hidvlStyle #globalsearch #browse a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #333333;
+	border-left-color: #333333;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+	width: auto;
+	background-color: #333333;
+	}
+	
+	
+	.hidvlStyle #globalsearch #hidvlnav {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: left;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	.hidvlStyle #search {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	float: right;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 12px;
+	width: 150px;
+	background-color: efefef;
+	padding: 2px;
+	height: 20px;
+	border: 1px solid #999999;
+	margin: 2px;
+	vertical-align: middle;
+	}
+	
+	.hidvlStyle #globalsearch #hidvlnavselected {
+	text-transform: uppercase;
+	color: #666666;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	width: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	float: left;
+	background-color: #FFFFFF;
+	}
+	
+	.hidvlStyle #globalsearch #hidvlnav a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	width: auto;
+	background-color: #333333;
+	}
+	
+	.hidvlStyle #globalsearch #hidvlnav a:hover {
+	color:#333333;
+	background-color: #CCCCCC;
+	text-decoration: none;
+	}
+	
+/* END SEARCH NAVIGATION */
+	
+	
+	
+	
+	
+	
+	
+	
+/* BEGIN GLOBAL LEGAL STATEMENT
+----------------------------------------*/
+	
+	#legal {
+	float: left;
+	width: 820px;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	clear: none;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	border-top-color: #dedede;
+	margin-bottom: 10px;
+	}
+	
+	#legal #copyright {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: left;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	#legal #rightnav {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+	}
+	
+	#legal #rightnavselected {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #666;
+		text-decoration: none;
+		white-space: nowrap;
+		display: block;
+		margin-top: 0px;
+		margin-right: 1px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		background-color: #dedede;
+		letter-spacing: 1px;
+		border-top-width: 0px;
+		border-right-width: 1px;
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+		padding-top: 2px;
+		padding-right: 10px;
+		padding-bottom: 2px;
+		padding-left: 10px;
+		border-right-color: #dedede;
+		border-bottom-color: #dedede;
+		border-left-color: #dedede;
+	}
+	
+	#legal a {
+		text-transform: none;
+		color: #666;
+		text-decoration: none;
+		white-space: nowrap;
+		display: block;
+		margin-top: 0px;
+		margin-right: 1px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		background-color: #fff;
+		letter-spacing: 0px;
+		padding-top: 2px;
+		padding-right: 10px;
+		padding-bottom: 2px;
+		padding-left: 0px;
+	}
+	
+	#legal a:hover {
+		color:#fff;
+		background-color: #333;
+		text-decoration: none;
+	}
+	
+/* END GLOBAL LEGAL STATEMENT */
+#basecontainer #stylecontainersearch #globalsearch #search #search {
+	margin-left: 5px;
+}

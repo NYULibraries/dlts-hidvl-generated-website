@@ -1,0 +1,49 @@
+<html>
+<head>
+   <meta charset="utf-8">
+
+      <title>Flowplayer - device test</title>
+   
+   <!-- optimize mobile versions -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Flowplayer skin -->
+   <link rel="stylesheet" href="fp-skin.css"> 
+<style>
+.flowplayer {
+  background-color: #00abcd;
+}
+.flowplayer .fp-color-play {
+  fill: #eee;
+}
+</style>
+
+      <!-- Flowplayer depends on jquery 1.7.2+ for video tag based installations -->
+   <script src="js/jquery.js"></script>
+         <!-- Flowplayer library -->
+   <script src="js/flowplayer.js"></script>
+         <!-- The hlsjs plugin for playback of HLS without Flash in modern browsers -->
+   <script src="js/flowplayer.hlsjs.js"></script>
+               
+   
+
+</head>
+
+<body>
+
+   <div id="content">
+
+      <h1>Flowplayer test devices</h1>
+
+<div class="flowplayer">
+
+   <video>
+<source type="application/x-mpegurl"
+        src="http://ams.library.nyu.edu/hls-vod/dlts/hidvl/jm63xvwx_manifest.m3u8">
+   </video>
+
+</div>
+</div>
+</body>
+</html>
+
+

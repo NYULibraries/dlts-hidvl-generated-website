@@ -1,0 +1,56 @@
+<html>
+<head>
+   <meta charset="utf-8">
+
+      <title>Flowplayer - device test</title>
+   
+   <!-- optimize mobile versions -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+      <!-- Flowplayer skin -->
+   <link rel="stylesheet" href="//releases.flowplayer.org/7.0.4/skin/skin.css">
+   
+   <!-- Minimal styling for this standalone page, can be removed -->
+   <link rel="stylesheet" href="http://demos.flowplayer.org/media/css/demo.css">
+   <!-- Syntax highlighting of source code, can be removed -->
+   <link rel="stylesheet" href="http://demos.flowplayer.org/media/css/pygments.css">
+   
+<style>
+.flowplayer {
+  background-color: #00abcd;
+}
+.flowplayer .fp-color-play {
+  fill: #eee;
+}
+</style>
+
+      <!-- Flowplayer depends on jquery 1.7.2+ for video tag based installations -->
+   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+         <!-- Flowplayer library -->
+   <script src="//releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
+         <!-- The hlsjs plugin for playback of HLS without Flash in modern browsers -->
+   <script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+               
+   
+
+</head>
+
+<body>
+
+   <div id="content">
+
+      <h1>Flowplayer test devices</h1>
+
+<div class="flowplayer">
+
+   <video>
+<source type="application/x-mpegurl"
+        src="http://ams.library.nyu.edu/hls-vod/dlts/hidvl/HI2011_005_manifest.m3u8">
+   </video>
+
+</div>
+</div>
+</body>
+</html>
+
+
