@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>HIDVL Flash Video</title>
+
+</head>
+<body>
+			<a style="display:block;width:640px;height:480px" id="player"></a>
+			<script src="http://dlib.nyu.edu/util/players/fp/standard/flowplayer.js" type="text/javascript"></script>
+			<script src="http://dlib.nyu.edu/util/players/fp/custom/util.js" type="text/javascript"></script>  
+			<script type="text/javascript" src="js/hidvl_s_common.js"></script> 
+			<script type="text/javascript">
+			//<![CDATA[
+				flowplayer("player", "http://dlib.nyu.edu/util/players/fp/standard/flowplayer.commercial.swf", {
+					key: '#$623666ca2f667514416',
+				    clip: { 
+						urlResolvers: 'bwcheck',
+						provider: 'rtmp',
+						autoPlay: false,
+						connectionArgs: [ readCookie('iPlanetDirectoryPro') ],
+						scaling: 'uniform',
+						bitrates: [
+							{ url: "mp4:HI2003_001_800k_s.mp4", width: 640, height: 480, bitrate: 800, isDefault: true },
+							{ url: "mp4:HI2003_001_300k_s.mp4", width: 448, height: 336, bitrate: 300 }
+						]
+					},
+					plugins: {
+						bwcheck: {
+							url: 'http://dlib.nyu.edu/util/players/fp/standard/flowplayer.bwcheck.swf',
+							serverType: 'fms',
+							netConnectionUrl: 'rtmp://fms.library.nyu.edu/hidvl_s',
+							dynamic: true
+						},
+						controls: {
+							backgroundColor: '#333333',
+							timeColor: '#ffffff',
+							buttonColor: '#a1a1a1',
+							buttonOverColor: '#ffffff',
+							durationColor: '#a1a1a1',
+							tooltips: {
+								buttons: 'false',
+								fullscreen: 'Start video to enable Fullscreen'
+							},
+						},	
+						content: {
+							url: 'http://dlib.nyu.edu/util/players/fp/standard/flowplayer.content.swf',
+							opacity: 0
+						},
+						rtmp: {
+							url: 'http://dlib.nyu.edu/util/players/fp/standard/flowplayer.rtmp.swf',
+							netConnectionUrl: 'rtmp://fms.library.nyu.edu/hidvl_s'
+						}
+					},
+					onError: function(errorCode, errorMessage) {
+						$f().stop();
+						$f().getPlugin('play').css({ opacity: 0 });
+						// show error message
+						var contentPlugin = $f().getPlugin('content');
+						contentPlugin.setHtml('<h1>To see this video please log in to the NYU system via NYUHome: <a href="https://home.nyu.edu">https://home.nyu.edu</a></h1>'); 
+						contentPlugin.css({ opacity: 1.0 });
+					}
+				});
+			//]]>
+			</script>
+</body>
+</html>

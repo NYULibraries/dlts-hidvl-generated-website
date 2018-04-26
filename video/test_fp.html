@@ -1,0 +1,149 @@
+
+
+<!doctype html>
+
+<html>
+
+<head>
+   <meta charset="utf-8">
+
+      <title>Flowplayer · Live stream</title>
+   
+   <!-- optimize mobile versions -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- The "minimalist" skin - choose from: "minimalist.css", "functional.css", "playful.css" -->
+   <link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
+   
+   
+<style>
+#content {
+  max-width: 720px; /* narrower for almost 4/3 aspect ratio */
+}
+.flowplayer {
+  background: #777;
+  margin-bottom: 20px;
+}
+</style>
+
+      <!-- Flowplayer depends on jquery -->
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+         <!-- Flowplayer library -->
+   <script src="http://releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+   
+   
+<script>
+flowplayer.conf = {
+  live: true, // mandatory with live streams
+  rtmp: "rtmp://itv08.digizuite.dk/tv2b",
+  ratio: 9/16,
+  // work around a bug in the flash engine regarding live streams
+  swf: "//releases.flowplayer.org/5.4.3/flowplayer.swf"
+};
+
+flowplayer(function (api) {
+  api.bind("load", function (e, api, video) {
+    $("#vtype").text(video.type);
+  });
+});
+</script>
+
+
+</head>
+
+<body>
+
+   <div id="content">
+
+      <h1>Flowplayer · Live stream</h1>
+
+<div class="flowplayer play-button fixed-controls">
+
+   <video preload="none">
+<source type="application/x-mpegurl" src="http://itv08.digizuite.dk/tv2b/ngrp:ch1_all/playlist.m3u8">
+<source type="video/flash" src="ch1">
+   </video>
+
+</div>
+
+<div class="info">
+  <p>Video type: <span id="vtype"></span></p>
+
+  <p>Caveat: live streams are not yet officially supported. You should always test a
+  live setup with your own streams.</p>
+
+  <p>Disclaimer: The live stream might be down sometimes.</p>
+</div>
+
+<div class="doc">
+  <p>You need to serve a HLS (html5) and an RTMP (Flash) stream.</p>
+
+  <p>With live streams it is mandatory to configure <code>live: true</code> or to add the
+  <code>is-live</code>
+  <a href="http://flowplayer.org/docs/skinning.html#configurable-states">state class</a>.
+
+  <p>Also do not try to preload the video - which does not make sense with a live stream anyway.
+  Either use a <a href="http://flowplayer.org/docs/setup.html#splash">splash setup</a> and/or
+  add <code>preload="none"</code> as
+  <a href="http://flowplayer.org/docs/setup.html#video-attributes">attribute</a> to the video
+  tag.</p>
+
+  <p>WebKiT browsers reset the Flash engine on fullscreen toggle, therefore you will notice that in
+  Chrome there's a slight delay and the timer is reset, because the Flash engine must reconnect.</p>
+
+  <p><b>Note:</b> This demo uses the 5.4.3 version of <code>flowplayer.swf</code> to work around a
+  <a href="https://github.com/flowplayer/flowplayer/issues/570">regression</a> in the Flash engine
+  regarding live streams.</p>
+</div>
+
+<h2 id="head-setup">&lt;head/&gt;</h2>
+
+<h3 id="javascript-setup">&lt;script&gt;</h3>
+
+<div class="doc">
+  <p>The <code>live</code>
+  <a href="http://flowplayer.org/docs/setup.html#config-options">option</a> can currently
+  only be set globally or on a per player basis.</p>
+
+  <p>In some cases configuring RTMP via JavaScript, not in the <code>data-rtmp</code>
+  container attribute seems safer for live streams.</p>
+</div>
+
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nx">flowplayer</span><span class="p">.</span><span class="nx">conf</span> <span class="o">=</span> <span class="p">{</span><br />  <span class="nx">live</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// mandatory with live streams</span><br />  <span class="nx">rtmp</span><span class="o">:</span> <span class="s2">&quot;rtmp://itv08.digizuite.dk/tv2b&quot;</span><span class="p">,</span><br />  <span class="nx">ratio</span><span class="o">:</span> <span class="mi">9</span><span class="o">/</span><span class="mi">16</span><span class="p">,</span><br />  <span class="c1">// work around a bug in the flash engine regarding live streams</span><br />  <span class="nx">swf</span><span class="o">:</span> <span class="s2">&quot;//releases.flowplayer.org/5.4.3/flowplayer.swf&quot;</span><br /><span class="p">};</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+
+<h2 id="html-setup">&lt;body/&gt;</h2>
+
+<div class="doc">
+  <p>Streams are picked in this order:</p>
+
+  <ol>
+     <li>HLS stream in the HTML5 engine in browsers which can play HLS</li>
+
+     <li>RTMP stream in the Flash engine</li>
+  </ol>
+
+  <p>You should play with different values for the <code>preload</code>
+  <a href="http://flowplayer.org/docs/setup.html#video-attributes">video attribute</a>
+  depending on your streams.</p>
+</div>
+
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flowplayer play-button fixed-controls&quot;</span><span class="nt">&gt;</span><br />&nbsp;<br />   <span class="nt">&lt;video</span> <span class="na">preload=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span><br /><span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;application/x-mpegurl&quot;</span> <span class="na">src=</span><span class="s">&quot;http://itv08.digizuite.dk/tv2b/ngrp:ch1_all/playlist.m3u8&quot;</span><span class="nt">&gt;</span><br /><span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/flash&quot;</span> <span class="na">src=</span><span class="s">&quot;ch1&quot;</span><span class="nt">&gt;</span><br />   <span class="nt">&lt;/video&gt;</span><br />&nbsp;<br /><span class="nt">&lt;/div&gt;</span><br /></pre></div><br /><figcaption>HTML</figcaption></figure></div>
+
+
+
+<div class="footer">
+  <p><a href="index.html">Demos in this section</a></p>
+
+  <hr>
+
+  <p><a href="http://demos.flowplayer.org">Flowplayer Demos+</a></p>
+
+  <hr>
+
+  <p><a href="http://flowplayer.org/demos/" target="_blank">Flowplayer Demos</a></p>
+</div>
+   </div> <!-- end content -->
+
+</body>
+</html>

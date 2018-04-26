@@ -1,0 +1,726 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*----------------------------------------
+
+Hemispheric Institute HIDVL stylesheet November 2007
+(for version 2006 browsers)
+
+version: 1.0
+author: Dexter Miranda
+email: hello@dxtr.org
+website: http://www.dxtr.org/
+
+----------------------------------------*/
+
+
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background-color: #d2e2eb;
+}
+.hidvlStyle #container {
+	width: 880px; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-image: url(../images/hemi_basetile_blu.png);
+	background-repeat: repeat-y;
+} 
+.hidvlStyle #header {
+	background-image: url(../images/hemi_basetile_grd.png);
+	background-repeat: repeat-y;
+	margin: 0px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+	float: none;
+	width: 880px;
+	height: 120px;
+} 
+.hidvlStyle #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+
+.hidvlStyle #mediaplayer {
+	background-color: #000000;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+        text-align:center;
+} 
+.hidvlStyle #text_div {
+        color:#FFFF66;
+display:block;
+width:640px;
+ height:190px;
+padding-top:150px;
+  margin-left: auto ;
+  margin-right: auto ;
+font-variant:small-caps;
+font-size:110%;
+font-family:Georgia,Times,serif;
+text-align:center;
+background-color:#000000;
+}
+
+.hidvlStyle #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 240px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999999;
+}
+.hidvlStyle #sidebar1 .label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #999999;
+	text-decoration: none;
+}
+
+.hidvlStyle #sidebar1 .label a{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #999999;
+	text-decoration: underline;
+}
+
+.hidvlStyle #mainContent {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 250px;
+	padding-top: 20px;
+	padding-right: 40px;
+	padding-bottom: 0;
+	padding-left: 20px;
+} 
+.hidvlStyle #mainContent p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 24px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+}
+
+.hidvlStyle #mainContent p a{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 24px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #333333;
+	text-decoration: underline;
+}
+
+.hidvlStyle #aboutContent {
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 0;
+	padding-left: 30px;
+	margin: 0px;
+} 
+.hidvlStyle #aboutContent p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+}
+
+.hidvlStyle #aboutCol01 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 390px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+} 
+.hidvlStyle #aboutCol01 p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #666;
+	text-decoration: none;
+}
+
+.hidvlStyle #aboutCol01 li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #666;
+	text-decoration: none;
+}
+
+.hidvlStyle #aboutCol01 h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #333;
+	text-decoration: none;
+}
+
+.hidvlStyle #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 240px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999999;
+}
+
+.hidvlStyle #footer {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #999999;
+	margin-right: 10px;
+	margin-left: 10px;
+} 
+.hidvlStyle #footer p {
+	margin: 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 30;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 9px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #999999;
+}
+.hidvlStyle #mainContent h6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 9px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #999999;
+	border: 0px dotted #CCCCCC;
+	padding: 5px;
+	margin: 0px;
+	width: 150px;
+	text-decoration: underline;
+}
+
+
+.hidvlStyle #searchContent {
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 0;
+	padding-left: 30px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 240px;
+} 
+
+.hidvlStyle #searchContent .addPadding{
+	padding-bottom:2px;
+}
+
+.hidvlStyle #searchContent .label{
+	font-weight:normal;
+	font-size:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #999;
+	text-decoration: none;
+}
+
+.hidvlStyle #searchContent .content {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 16px;
+	font-weight: normal;
+	color: #333;
+	margin: 0px;
+	padding: 0px;
+}
+
+.hidvlStyle #searchContent .addHRule{
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.hidvlStyle #footercap {
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+} 
+
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+
+#player{
+padding-left:105px;
+padding-top:20px;
+padding-bottom:20px;
+display:block;
+width:640px;
+height:480px;
+background-color:#000000;
+}
+.hidvlStyle #sidebar1 #sidebarcontent {
+	padding-right: 10px;
+	padding-left: 20px;
+	width: 210px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-bottom-color: #999999;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.hidvlStyle #sidebar1 hr {
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #999999;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.result {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #666666;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.hidvlStyle #sidebar1 #sidebarcontent .resulttitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.hidvlStyle #searchbar #form input {
+	border: 1px solid #999999;
+	background-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #CCCCCC;
+	width: 200px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.hidvlStyle #searchbar #form #jumpMenu {
+	padding: 2px;
+	width: 320px;
+	background-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	color: #CCCCCC;
+}
+
+.hidvlStyle #searchbar {
+	padding-top: 2px;
+	padding-right: 20px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: #333333;
+	text-align: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	clear: right;
+} 
+.hidvlStyle #mainContent .label {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-style: normal;
+        line-height: 14px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: uppercase;
+        color: #999999;
+        text-decoration: none;
+}
+.hidvlStyle #mainContent #abstract {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #333333;
+        text-decoration: none;
+}
+.hidvlStyle #mainContent #runTime {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #333333;
+        text-decoration: none;
+}
+.hidvlStyle #mainContent #mdLanguage {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #333333;
+        text-decoration: none;
+}
+
+.hidvlStyle #mainContent #rightsLink {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 75%;
+        font-style: normal;
+        line-height: 9px;
+        font-weight: normal;
+        color: #999999;
+        border: 0px dotted #CCCCCC;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        text-transform:uppercase;
+
+}
+
+.hidvlStyle #res{
+font-variant: small-caps;
+margin-left:-10px;
+margin-top: -39px;
+width: 200px;
+font-size:80%;
+padding-left:12%;
+
+}
+
+.hidvlStyle #QTmsg{
+color:white;
+padding:2%;
+padding-bottom:1%
+}
+.hidvlStyle #Viewing{
+color:white;
+padding-left:1%;
+}
+.hidvlStyle #res a{
+color:#FFFFCC;
+}
+
+
+#facets{
+padding-top:5%;
+}
+#facetHeader{
+margin-left:15px;
+text-transform: uppercase;
+font-size:80%;
+color:#4A4344;
+}
+p.facetBoxHeader {
+        font-size: 0.8em;
+        color: white;
+        margin: 0px;
+        background-color:  #666666;
+        padding: 5px;
+}
+
+div.facetBox {
+border-top: 1px solid;
+border-right: 1px solid;
+border-bottom: 1px solid;
+border-color:   #736F6E;
+        margin-left: 9px;
+margin-bottom: 10px;
+width: 190px;
+}
+
+
+
+ul.facetBoxOptions {
+list-style-type: none;
+padding: 5px 5px 5px 10px;
+margin: 0px;
+}
+
+ul.facetBoxOptions li {
+font-size: 0.8em;
+padding: 2px 0px 2px 0px;
+margin: 0px;
+
+}
+
+ul.facetBoxOptions li a {
+text-decoration: none;
+color:blue;
+}
+ul.facetBoxOptions li a:hover{
+color:#0066cc;
+}
+#numResults a{
+text-decoration: none;
+color:blue;
+
+}
+#numResults a:hover{
+color:#0066cc;
+}
+
+.result a{
+text-decoration: none;
+color:blue;
+}
+.result a:hover{
+color:#0066cc;
+}
+#tweakQuery{
+margin-top:65px;
+}
+#filterResults{
+width:190px;
+display:none;
+margin-left:10px;
+}
+#filterResults p{
+padding:0.5%;
+font-variant:small-caps;
+font-size:90%;
+}
+
+#facetsSelected{
+padding:2%;
+font-size:80%;
+text-decoration:none;
+}
+.hidvlStyle #searchContent .content {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 16px;
+        font-weight: normal;
+        color: #333;
+        margin: 0px;
+        padding: 0px;
+}
+
+.content a {
+color:blue;
+text-decoration:none;
+}
+.content a:hover {
+color:#0066cc;
+}
+
+#facetsSelected a{
+color:red;
+text-decoration:none;
+}
+#facetsSelected a:hover{
+color:#660000;
+}
+span#remove{
+margin-left:0px;
+padding-right:2%;
+}
+
+#collHeader{
+font-variant:small-caps;
+color:gray;
+}
+[if IE 5]>
+
+/* place css box model fixes for IE 5* in this conditional comment */
+.hidvlStyle #sidebar1 { width: 230px; }
+
+<![endif][if IE]>
+
+/* place css fixes for all versions of IE in this conditional comment */
+.hidvlStyle #sidebar1 { padding-top: 30px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+
+<![endif] 
+
+#chColl{
+padding-right:25%;
+color:white;
+font-size:80%;
+font-variant:small-caps;
+}
+#srchTxt{
+padding-right:3%;
+color:white;
+font-size:80%;
+font-variant:small-caps;
+}
+
+div#choice{
+margin-right: auto;
+margin-left: auto;
+width:200px; 
+font-variant:small-caps;
+padding-bottom:3%;
+}
+
+a.options{
+text-decoration:none;
+border-radius: 5px; 
+color:white;
+padding-top:6%;
+padding-left:9%; 
+padding-right:7%;
+padding-bottom: 6%;
+
+}
+
+a.options:hover{
+text-decoration:underline;
+}
+
+div#qTip {
+ padding: 3px;
+ border-radius: 5px; 
+ border: 1px solid #666;
+ border-right-width: 2px;
+ border-bottom-width: 2px;
+ display: none;
+ background: #FFFF99;
+ color: #000000;
+ font:bold 9px Verdana, Arial, sans-serif;
+ text-align: left;
+ position: absolute;
+ z-index: 1000;
+}
+

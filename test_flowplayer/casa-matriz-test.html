@@ -1,0 +1,126 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <title>Flowplayer</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/base/base.css" type="text/css">   
+</head>
+<body class="yui-skin-sam">
+<div id="doc" class="yui-t7">
+   <div id="hd" role="banner">
+     <h1>Flowplayer test page</h1>
+   </div>
+   
+   <div id="bd" role="main">
+	<h2>HIDVL</h2>
+	<div class="yui-g" id="000511064_mediaObject0" style="height: 25px; margin: 1.5em 0; width: 640px; height: 360px"></div>
+	</div>
+   <div id="ft" role="contentinfo"></div>
+</div>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script type="text/javascript" src="http://dlib.nyu.edu/util/players/fp/standard/flowplayer.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function() {
+var a = {
+   key: "#$623666ca2f667514416",
+   log : {
+     level  : 'debug',
+     filter : 'org.flowplayer.*'
+   },
+   clip: {
+      urlResolvers: 'bwcheck',
+      provider: 'rtmp',
+      scaling: 'uniform',
+      autoPlay: false,
+      start: 0,
+      bitrates: [
+         {
+            url: 'mp4:000511064_300k_s.mp4',
+            width: 448,
+            height: 336,
+            bitrate: 300,
+            isDefault: true
+         },
+         {
+            url: 'mp4:000511064_800k_s.mp4',
+            width: 640,
+            height: 480,
+            bitrate: 800
+         }
+      ]
+   },
+   plugins: {
+      bwcheck: {
+         url: 'http://dlib.nyu.edu/util/players/fp/standard/flowplayer.bwcheck.swf',
+         bitrateProfileName: "RTMPBitrateProfile",
+         checkOnStart: 1,
+         dynamic: 0,
+         dynamicBuffer: 1,
+         live: 0,
+         netConnectionUrl: "rtmp://fms.library.nyu.edu/hidvl_r",
+         rememberBitrate: 1,
+         serverType: "fms",
+         switchOnFullscreen: 0,
+         
+      },
+      controls: {
+         backgroundColor: '#333333',
+         timeColor: '#ffffff',
+         buttonColor: '#a1a1a1',
+         buttonOverColor: '#ffffff',
+         durationColor: '#a1a1a1',
+         tooltips: {
+            buttons: 'true',
+            fullscreen: 'Start video to enable Fullscreen'
+         }
+      },
+      content: {
+         url: 'http://dlib.nyu.edu/util/players/fp/standard/flowplayer.content.swf',
+         opacity: 0
+      },
+      rtmp: {
+         url: 'http://dlib.nyu.edu/util/players/fp/custom/flowplayer.rtmp.swf',
+         netConnectionUrl: 'rtmp://fms.library.nyu.edu/hidvl_r'
+      }
+   },
+   playerId: '000511064_mediaObject0',
+   playlist: [
+      {
+         urlResolvers: 'bwcheck',
+         provider: 'rtmp',
+         scaling: 'uniform',
+         autoPlay: false,
+         start: 0,
+         bitrates: [
+            {
+               url: 'mp4:000511064_300k_s.mp4',
+               width: 448,
+               height: 336,
+               bitrate: 300,
+               isDefault: true
+            },
+            {
+               url: 'mp4:000511064_800k_s.mp4',
+               width: 640,
+               height: 480,
+               bitrate: 800
+            }
+         ]
+      }
+   ]
+  };
+
+  $f( a.playerId, 'http://hidvl.nyu.edu/util/players/fp/standard/flowplayer.commercial.swf', {
+    key: a. key,
+    log: a.log,
+    clip: a. clip,
+    plugins : a.plugins
+  });
+       
+});
+   
+  </script>
+</body>
+</html>
