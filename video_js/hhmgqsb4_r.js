@@ -5,14 +5,13 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
     clip: {
         urlResolvers: 'bwcheck',
         provider: 'rtmp',
-        scaling: 'uniform',
+        scaling: 'scale',
         autoPlay: false,
         bitrates: [
-            { url: 'mp4:000515808_300k_s.mp4', width: 448, height: 336, bitrate: 300, isDefault: true },
-            { url: 'mp4:000515808_800k_s.mp4', width: 640, height: 480, bitrate: 800 }
+            { url: 'mp4:hhmgqsb4_300k_s.mp4', width: 448, height: 252, bitrate: 300, isDefault: true },
+            { url: 'mp4:hhmgqsb4_800k_s.mp4', width: 640, height: 360, bitrate: 800 }
         ]
     },
-
     canvas:  {
         // configure background properties
         backgroundColor: '#000000',
