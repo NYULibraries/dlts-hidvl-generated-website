@@ -5,7 +5,7 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
     clip: {
         urlResolvers: 'bwcheck',
         provider: 'rtmp',
-        scaling: 'uniform',
+        scaling: 'scale',
         autoPlay: false,
         bitrates: [
             { url: 'mp4:2547db54_300k_s.mp4', width: 448, height: 336, bitrate: 300, isDefault: true },
@@ -29,7 +29,7 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
             // we use dynamic switching
             dynamic: true,
             // use this connection for bandwidth detection
-            netConnectionUrl: 'rtmp://fms.library.nyu.edu/hidvl_r'
+            netConnectionUrl: 'rtmp://ams.library.nyu.edu/hidvl_r'
         },
 
         controls: {
@@ -54,7 +54,7 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
             url: 'http://dlib.nyu.edu/util/players/fp/custom/flowplayer.rtmp.swf',
 
             // netConnectionUrl defines where the streams are found
-            netConnectionUrl: 'rtmp://fms.library.nyu.edu/hidvl_r'
+            netConnectionUrl: 'rtmp://ams.library.nyu.edu/hidvl_r'
         }
     },
 
