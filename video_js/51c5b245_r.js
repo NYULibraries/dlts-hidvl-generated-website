@@ -5,7 +5,7 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
     clip: {
         urlResolvers: 'bwcheck',
         provider: 'rtmp',
-        scaling: 'uniform',
+        scaling: 'scale',
         autoPlay: false,
         bitrates: [
             { url: 'mp4:51c5b245_300k_s.mp4', width: 448, height: 252, bitrate: 300, isDefault: true },
