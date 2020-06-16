@@ -8,8 +8,8 @@ var thePlayer = $f("player", "http://hidvl.nyu.edu/util/players/fp/standard/flow
         scaling: 'scale',
         autoPlay: false,
         bitrates: [
-            { url: 'mp4:2jm64127_300k_s.mp4', width: 448, height: 336, bitrate: 300, isDefault: true },
-            { url: 'mp4:2jm64127_800k_s.mp4', width: 640, height: 480, bitrate: 800 }
+            { url: 'mp4:6m905xr4_300k_s.mp4', width: 448, height: 336, bitrate: 300, isDefault: true },
+            { url: 'mp4:6m905xr4_800k_s.mp4', width: 640, height: 480, bitrate: 800 }
         ]
     },
     canvas:  {
